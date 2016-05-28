@@ -7,7 +7,7 @@ module Ambience
 
     DEFAULT_ENVIRONMENT = "development"
 
-    def initialize(@path, @environment = DEFAULT_ENVIRONMENT)
+    def initialize(@path : String, @environment = DEFAULT_ENVIRONMENT)
       @env = {} of String => String
     end
 
